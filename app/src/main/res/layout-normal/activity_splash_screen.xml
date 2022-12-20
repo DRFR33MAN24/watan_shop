@@ -4,11 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_img"
+
 
     tools:context="com.sabeal.watanshop.SplashScreen">
 
-
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:alpha="0.8"
+    />
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -23,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent"
 
 
-        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintVertical_bias="0.07999998"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
@@ -38,22 +43,20 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        />
 
-    <!--    <com.airbnb.lottie.LottieAnimationView-->
-    <!--        android:id="@+id/lottie"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-
-    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
 
 
-    <!--        app:layout_constraintRight_toRightOf="parent"-->
-
-    <!--        app:layout_constraintTop_toBottomOf="@id/splashText"-->
-    <!--        app:layout_constraintVertical_bias="1.0"-->
-    <!--        app:lottie_autoPlay="true"-->
-    <!--        app:lottie_rawRes="@raw/rocket" />-->
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/cart" />
 </androidx.constraintlayout.widget.ConstraintLayout>

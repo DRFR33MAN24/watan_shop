@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:backgroundTint="@color/white"
-    android:backgroundTintMode="multiply"
+    android:background="@drawable/background_img"
+
     tools:context="com.sabeal.watanshop.SplashScreen">
 
 
@@ -14,46 +13,47 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="300dp"
+
         android:background="@drawable/logo"
         android:contentDescription="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@id/splashText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+
+
+        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/splashText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:fontFamily="@font/elmessiri_semibold"
-        android:textSize="24dp"
-
         android:text="انطلق باعلانك خارج الحدود"
-        app:layout_constraintLeft_toLeftOf="parent"
-
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintLeft_toLeftOf="parent"
-
-
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        app:layout_constraintTop_toBottomOf="@id/splashText"
-        app:layout_constraintVertical_bias="1.0"
-        app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/rocket" />
+    <!--    <com.airbnb.lottie.LottieAnimationView-->
+    <!--        android:id="@+id/lottie"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+
+
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+
+    <!--        app:layout_constraintTop_toBottomOf="@id/splashText"-->
+    <!--        app:layout_constraintVertical_bias="1.0"-->
+    <!--        app:lottie_autoPlay="true"-->
+    <!--        app:lottie_rawRes="@raw/rocket" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

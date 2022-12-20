@@ -71,7 +71,10 @@
         <item name="fontFamily">@font/elmessiri_semibold</item>
     </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/elmessiri_semibold</item>
+        <item name="fontFamily">@font/elmessiri_semibold</item>
+    </style>
 
     <style name="customDialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:windowAnimationStyle">@style/customDialogAnimation</item>

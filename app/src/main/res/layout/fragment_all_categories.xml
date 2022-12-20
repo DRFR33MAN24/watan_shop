@@ -33,11 +33,11 @@
                 <!-- Adding 15 rows of placeholders -->
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
 
                     <include layout="@layout/dialog_layout"
-                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         />
